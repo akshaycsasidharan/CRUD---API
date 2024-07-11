@@ -34,16 +34,13 @@ MONGO_URI=your_mongodb_connection_string<br>
 Replace your_mongodb_connection_string with your MongoDB URI.
 
 ## Usage
-* Start the server:<br>
-npm start
+* Start the server: npm start
 * The server will start running at http://localhost:3000.
 
 ## API Documentation
 ### Get All Products
 **Endpoint:** /api/products
-
 **Method:** GET<br>
-
 **Response:** <br><br>
 &nbsp;&nbsp;[<br>
  &nbsp;&nbsp;&nbsp;&nbsp; {<br>
@@ -61,7 +58,6 @@ npm start
 **Endpoint:** /api/products/:id<br>
 **Method:** GET<br>
 **Response:**<br>
-
 &nbsp;&nbsp;{<br>
   &nbsp;&nbsp;&nbsp;&nbsp;"_id": "product_id",<br>
   &nbsp;&nbsp;&nbsp;&nbsp;"name": "Product Name",<br>
@@ -73,11 +69,8 @@ npm start
 &nbsp;&nbsp;}<br>
 ### Create a Product
 **Endpoint:** /api/products<br>
-
 **Method:** POST<br>
-
 **Request Body:**<br>
-
 &nbsp;&nbsp;{<br>
  &nbsp;&nbsp;&nbsp;&nbsp; "name": "Product Name",<br>
   &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 10,<br>
@@ -99,20 +92,20 @@ npm start
 **Method:** PUT<br>
 **Request Body:** Any of the following fields can be updated:<br>
 &nbsp;&nbsp;{<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "name": "Updated Product Name",<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;"name": "Updated Product Name",<br>
   &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 20,<br>
   &nbsp;&nbsp;&nbsp;&nbsp;"price": 149.99,<br>
   &nbsp;&nbsp;&nbsp;&nbsp;"image": "updated_product_image_url"<br>
 &nbsp;&nbsp;}<br>
 **Response:**<br>
 &nbsp;&nbsp;{<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "_id": "product_id",<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "name": "Updated Product Name",<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "quantity": 20,<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "price": 149.99,<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "image": "updated_product_image_url",<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "createdAt": "2024-07-12T10:00:00.000Z",<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "updatedAt": "2024-07-12T11:00:00.000Z"<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;"_id": "product_id",<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;"name": "Updated Product Name",<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 20,<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;"price": 149.99,<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;"image": "updated_product_image_url",<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;"createdAt": "2024-07-12T10:00:00.000Z",<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;"updatedAt": "2024-07-12T11:00:00.000Z"<br>
 &nbsp;&nbsp;}<br>
 ### Delete a Product
 **Endpoint:** /api/products/:id<br>
@@ -122,7 +115,7 @@ npm start
 **Response:** <br>
 
 &nbsp;&nbsp;{<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "message": "Product deleted successfully"<br>
+&nbsp;&nbsp;&nbsp;&nbsp; "message": "Product deleted successfully"<br>
 &nbsp;&nbsp;}<br>
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
