@@ -23,8 +23,8 @@ Before running this project locally, ensure you have the following installed:
 * npm (Node Package Manager)
 ## Installation
 **Clone the repository:**
-git clone https://github.com/yourusername/CRUD--API.git
-cd CRUD--API
+git clone https://github.com/akshaycsasidharan/Product-Management-API.git
+cd Product-Management-API
 ## Install dependencies:
 npm install
 ## Set up environment variables:
