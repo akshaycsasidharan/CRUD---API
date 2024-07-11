@@ -39,80 +39,80 @@ Replace your_mongodb_connection_string with your MongoDB URI.
 
 ## API Documentation
 * ### Get All Products
-**Endpoint:** /api/products
-**Method:** GET<br>
-**Response:** <br><br>
-&nbsp;&nbsp;[<br>
- &nbsp;&nbsp;&nbsp;&nbsp; {<br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   "_id": "product_id",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "name": "Product Name",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "quantity": 10,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "price": 99.99,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "image": "product_image_url",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "createdAt": "2024-07-12T10:00:00.000Z",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "updatedAt": "2024-07-12T12:00:00.000Z"<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;},<br>
- &nbsp;&nbsp;&nbsp;&nbsp; ...<br>
-&nbsp;&nbsp;]<br>
+    **Endpoint:** /api/products
+    **Method:** GET<br>
+    **Response:** <br><br>
+    &nbsp;&nbsp;[<br>
+     &nbsp;&nbsp;&nbsp;&nbsp; {<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   "_id": "product_id",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "name": "Product Name",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "quantity": 10,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "price": 99.99,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "image": "product_image_url",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "createdAt": "2024-07-12T10:00:00.000Z",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "updatedAt": "2024-07-12T12:00:00.000Z"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;},<br>
+     &nbsp;&nbsp;&nbsp;&nbsp; ...<br>
+    &nbsp;&nbsp;]<br>
 * ### Get a Product by ID
-**Endpoint:** /api/products/:id<br>
-**Method:** GET<br>
-**Response:**<br>
-&nbsp;&nbsp;{<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"_id": "product_id",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"name": "Product Name",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 10,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"price": 99.99,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"image": "product_image_url",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"createdAt": "2024-07-12T10:00:00.000Z",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"updatedAt": "2024-07-12T12:00:00.000Z"<br>
-&nbsp;&nbsp;}<br>
+    **Endpoint:** /api/products/:id<br>
+    **Method:** GET<br>
+    **Response:**<br>
+    &nbsp;&nbsp;{<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"_id": "product_id",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"name": "Product Name",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 10,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"price": 99.99,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"image": "product_image_url",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"createdAt": "2024-07-12T10:00:00.000Z",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"updatedAt": "2024-07-12T12:00:00.000Z"<br>
+    &nbsp;&nbsp;}<br>
 * ### Create a Product
-**Endpoint:** /api/products<br>
-**Method:** POST<br>
-**Request Body:**<br>
-&nbsp;&nbsp;{<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "name": "Product Name",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 10,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"price": 99.99,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"image": "product_image_url"<br>
-&nbsp;&nbsp;}<br>
-**Response:**<br>
-&nbsp;&nbsp;{<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "_id": "product_id",<br>
- &nbsp;&nbsp;&nbsp;&nbsp; "name": "Product Name",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 10,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"price": 99.99,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"image": "product_image_url",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"createdAt": "2024-07-12T10:00:00.000Z",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"updatedAt": "2024-07-12T10:00:00.000Z"<br>
-&nbsp;&nbsp;}<br>
+    **Endpoint:** /api/products<br>
+    **Method:** POST<br>
+    **Request Body:**<br>
+    &nbsp;&nbsp;{<br>
+     &nbsp;&nbsp;&nbsp;&nbsp; "name": "Product Name",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 10,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"price": 99.99,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"image": "product_image_url"<br>
+    &nbsp;&nbsp;}<br>
+    **Response:**<br>
+    &nbsp;&nbsp;{<br>
+     &nbsp;&nbsp;&nbsp;&nbsp; "_id": "product_id",<br>
+     &nbsp;&nbsp;&nbsp;&nbsp; "name": "Product Name",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 10,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"price": 99.99,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"image": "product_image_url",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"createdAt": "2024-07-12T10:00:00.000Z",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"updatedAt": "2024-07-12T10:00:00.000Z"<br>
+    &nbsp;&nbsp;}<br>
 * ### Update a Product
-**Endpoint:** /api/products/:id<br>
-**Method:** PUT<br>
-**Request Body:** Any of the following fields can be updated:<br>
-&nbsp;&nbsp;{<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"name": "Updated Product Name",<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 20,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"price": 149.99,<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;"image": "updated_product_image_url"<br>
-&nbsp;&nbsp;}<br>
-**Response:**<br>
-&nbsp;&nbsp;{<br>
- &nbsp;&nbsp;&nbsp;&nbsp;"_id": "product_id",<br>
- &nbsp;&nbsp;&nbsp;&nbsp;"name": "Updated Product Name",<br>
- &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 20,<br>
- &nbsp;&nbsp;&nbsp;&nbsp;"price": 149.99,<br>
- &nbsp;&nbsp;&nbsp;&nbsp;"image": "updated_product_image_url",<br>
- &nbsp;&nbsp;&nbsp;&nbsp;"createdAt": "2024-07-12T10:00:00.000Z",<br>
- &nbsp;&nbsp;&nbsp;&nbsp;"updatedAt": "2024-07-12T11:00:00.000Z"<br>
-&nbsp;&nbsp;}<br>
+    **Endpoint:** /api/products/:id<br>
+    **Method:** PUT<br>
+    **Request Body:** Any of the following fields can be updated:<br>
+    &nbsp;&nbsp;{<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"name": "Updated Product Name",<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 20,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"price": 149.99,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"image": "updated_product_image_url"<br>
+    &nbsp;&nbsp;}<br>
+    **Response:**<br>
+    &nbsp;&nbsp;{<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"_id": "product_id",<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"name": "Updated Product Name",<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"quantity": 20,<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"price": 149.99,<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"image": "updated_product_image_url",<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"createdAt": "2024-07-12T10:00:00.000Z",<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;"updatedAt": "2024-07-12T11:00:00.000Z"<br>
+    &nbsp;&nbsp;}<br>
 * ### Delete a Product
-**Endpoint:** /api/products/:id<br>
-**Method:** DELETE<br>
-**Response:** <br>
-&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;&nbsp; "message": "Product deleted successfully"<br>
-&nbsp;&nbsp;}<br>
+    **Endpoint:** /api/products/:id<br>
+    **Method:** DELETE<br>
+    **Response:** <br>
+    &nbsp;&nbsp;{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; "message": "Product deleted successfully"<br>
+    &nbsp;&nbsp;}<br>
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
