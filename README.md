@@ -23,7 +23,7 @@ Before running this project locally, ensure you have the following installed:
 * npm (Node Package Manager)
 ## Installation
 **Clone the repository:**
-git clone https://github.com/akshaycsasidharan/Product-Management-API.git
+git clone https://github.com/akshaycsasidharan/Product-Management-API.git<br>
 cd Product-Management-API
 ## Install dependencies:
 npm install
